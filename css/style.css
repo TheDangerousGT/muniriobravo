@@ -1120,6 +1120,9 @@ a[href*='tel'], a[href*='mailto'] {
 .box-pricing-black .box-pricing-title {
 	color: inherit;
 }
+.button-gold{
+	background-color: #FFD700;
+}
 
 .box-pricing-black .divider {
 	background: rgba(225, 225, 225, 0.2);
@@ -6225,7 +6228,7 @@ textarea.textarea-lg {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
-	background-image: url(../images/quote-jean.png);
+	background-image: url(../images/logomuni3.png);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
@@ -12392,7 +12395,7 @@ html:not(.lt-ie10) .not-animated {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background-color: #6689ff;
+	background-color: #FFD700;
 	animation: loaderBlock 1.2s infinite ease-in-out both;
 }
 
