@@ -16,4 +16,4 @@ Este repositorio alberga el código fuente y los recursos relacionados con el si
 
 ## Licencia
 
-El contenido de este repositorio está disponible bajo la [Licencia MIT](LICENSE).
+El contenido de este repositorio está disponible bajo la [Licencia de Software Propietario](LICENSE).
