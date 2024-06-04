@@ -1,0 +1,15 @@
+{
+    "error": {
+      "code": 400,
+      "message": "Could not process sitemap '/sitemap.xml'",
+      "errors": [
+        {
+          "message": "Could not process sitemap '/sitemap.xml'",
+          "domain": "global",
+          "reason": "invalidParameter",
+          "location": "feedpath",
+          "locationType": "parameter"
+        }
+      ]
+    }
+  }
