@@ -237,7 +237,12 @@ p [style*='max-width'] {
 .brand .brand-logo-dark {
 	display: block;
 }
-
+@media (max-width: 576px) {
+	.img_muni {
+	  margin-top: -25px !important; /* Adjust the value as needed */
+	  margin-bottom: 25px !important;
+	}
+  }
 /*
 *
 * Links
