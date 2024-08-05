@@ -6238,6 +6238,12 @@ textarea.textarea-lg {
 	background-position: 50% 0;
 }
 
+@media (max-width: 768px) {
+    .infopublic {
+      color: white !important;
+    }
+  }
+
 * + .quote-jean {
 	margin-top: 16px;
 }
