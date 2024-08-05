@@ -6,7 +6,7 @@ Este repositorio alberga el código fuente y los recursos relacionados con el si
 
 ## Recursos
 
-- **Sitio Web:** [www.municipalidadriobravo.com](https://mimuniriobravo.netlify.app/)
+- **Sitio Web:** [www.muniriobravo.gob.gt](https://www.muniriobravo.gob.gt)
 - **Correo Electrónico:** muniriobravo@gmail.com
 - **Teléfono:** +502 7870-5599
 
