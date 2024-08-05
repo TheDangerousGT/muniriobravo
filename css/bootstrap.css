@@ -7253,7 +7253,7 @@ button.close {
 		text-align: center !important;
 	}
 	.infopublic {
-		color: white !important;
+		color: white;
 	}
 }
 
