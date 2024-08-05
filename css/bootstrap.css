@@ -7252,6 +7252,9 @@ button.close {
 	.text-md-center {
 		text-align: center !important;
 	}
+	.infopublic {
+		color: white !important;
+	}
 }
 
 @media (min-width: 992px) {
