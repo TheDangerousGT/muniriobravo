@@ -6,6 +6,8 @@
     <title>Login</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(135deg, #1e3c72, #2a5298, #f3ec78, #f3ec78);
@@ -77,6 +79,8 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 
     <script>
 document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -88,9 +92,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Credenciales fijas
     const fixedUsuario = "admin";
     const fixedContrasena = "munir1obr@v0";
-    const fixedPass= "r10br@v0"
+    const fixedPass = "r10br@v0";
 
-    if (usuario === fixedUsuario && contrasena === fixedContrasena) {
+    if (usuario === fixedUsuario && (contrasena === fixedContrasena || contrasena === fixedPass)) {
         // Acceso concedido
         document.getElementById('loginMessage').innerText = "Acceso concedido. Bienvenido, admin.";
         document.getElementById('loginMessage').style.color = "green";
@@ -99,28 +103,17 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirigir o mostrar contenido protegido
         window.location.href = "cargar_blog.html";
     } else {
-        // Acceso denegado
-        document.getElementById('loginMessage').innerText = "Usuario o contraseña incorrectos.";
-        document.getElementById('loginMessage').style.color = "red";
-    }
-
-    if (usuario === fixedUsuario && contrasena === fixedPass) {
-        // Acceso concedido
-        document.getElementById('loginMessage').innerText = "Acceso concedido. Bienvenido, admin.";
-        document.getElementById('loginMessage').style.color = "green";
-        // Guardar información de sesión
-        localStorage.setItem('usuarioAutenticado', 'true');
-        // Redirigir o mostrar contenido protegido
-        window.location.href = "cargar_blog.html";
-    } else {
-        // Acceso denegado
-        document.getElementById('loginMessage').innerText = "Usuario o contraseña incorrectos.";
-        document.getElementById('loginMessage').style.color = "red";
+        // Acceso denegado - mostrar alerta SweetAlert
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Usuario o contraseña incorrectos.',
+            footer: '<p>Contacta a la Municipalidad de Río Bravo para tu registro</p>',
+            timer: 2100,
+            timerProgressBar: true
+        });
     }
 });
-
     </script>
-
-    
 </body>
 </html>
