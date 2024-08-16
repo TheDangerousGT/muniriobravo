@@ -9904,7 +9904,7 @@ h2.title-modern > span {
 
 .team-classic-figure img {
 	width: 100%;
-	filter: grayscale(100%);
+	filter: grayscale(0);
 	transition: all .3s ease;
 }
 
@@ -9968,6 +9968,11 @@ h2.title-modern > span {
 	}
 }
 
+@media (min-width: 992px) {
+	.team-classic-figure img {
+		filter: grayscale(100%);
+	}
+}
 @media (min-width: 992px) {
 	.desktop .team-classic:hover .team-classic-figure img {
 		filter: grayscale(0) !important;
