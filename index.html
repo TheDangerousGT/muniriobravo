@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (incluye Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -57,6 +64,8 @@
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Proyectos/Actividades</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Administración</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#news">Blog</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="alcalde.html">Alcalde</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="municipio.html">Nuestro Municipio</a></li>
                         <li class="rd-nav-item">
                           <a class="rd-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ingresar
@@ -615,7 +624,7 @@ Pricing-->
                     <time datetime="2019-07-04"><span class="post-modern-time-month">30</span><span class="post-modern-time-number">07</span></time>
                   </div></a>
                 <h4 class="post-modern-title"><a href="#">Nuestra nueva ambulancia</a></h4>
-                <p class="post-modern-text" style="text-align: justify;">La Municipalidad de Río Bravo ha recibido una generosa donación de una ambulancia totalmente equipada por parte de la empresa INTROSA S.A. Agradecemos profundamente este valioso aporte, que mejorará nuestros servicios de emergencia y atención médica en la comunidad. ¡Gracias, INTROSA S.A., por su apoyo y compromiso con Río Bravo!</p>
+                <p class="post-modern-text">La Municipalidad de Río Bravo ha recibido una generosa donación de una ambulancia totalmente equipada por parte de la empresa INTROSA S.A. Agradecemos profundamente este valioso aporte, que mejorará nuestros servicios de emergencia y atención médica en la comunidad. ¡Gracias, INTROSA S.A., por su apoyo y compromiso con Río Bravo!</p>
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".1s">
@@ -625,18 +634,44 @@ Pricing-->
                     <time datetime="2019-07-17"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">06</span></time>
                   </div></a>
                 <h4 class="post-modern-title"><a href="#">Pagos POS</a></h4>
-                <p class="post-modern-text" style="text-align: justify;">La Municipalidad de Río Bravo se complace en anunciar que ahora contamos con sistemas de pago POS, permitiendo a los ciudadanos pagar sus servicios con tarjeta de crédito o débito. Esta nueva opción busca facilitar y agilizar los procesos de pago para todos. ¡Seguimos trabajando para mejorar nuestros servicios!</p>
+                <p class="post-modern-text">La Municipalidad de Río Bravo se complace en anunciar que ahora contamos con sistemas de pago POS, permitiendo a los ciudadanos pagar sus servicios con tarjeta de crédito o débito. Esta nueva opción busca facilitar y agilizar los procesos de pago para todos. ¡Seguimos trabajando para mejorar nuestros servicios!</p>
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
               <!-- Post Modern-->
-              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="images/independencia3.png" alt="" width="370" height="307"/>
+              <article class="post post-modern">
+                <a class="post-modern-figure" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="images/independencia3.png" alt="" width="370" height="307"/>
                   <div class="post-modern-time">
-                    <time datetime="2019-07-22"><span class="post-modern-time-month">15</span><span class="post-modern-time-number">09</span></time>
-                  </div></a>
-                <h4 class="post-modern-title"><a href="#">¡Se Acercan Nuestras Fiestas Patrias!</a></h4>
+                    <time datetime="2019-07-22">
+                      <span class="post-modern-time-month">15</span>
+                      <span class="post-modern-time-number">09</span>
+                    </time>
+                  </div>
+                </a>
+                <h4 class="post-modern-title">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">¡Se Acercan Nuestras Fiestas Patrias!</a>
+                </h4>
                 <p class="post-modern-text" style="text-align: justify;">La Municipalidad de Río Bravo se complace en anunciar que estamos a punto de celebrar nuestras Fiestas Patrias. Invitamos a toda la comunidad a unirse a las festividades y disfrutar de los eventos y actividades que hemos preparado. ¡Celebremos juntos con orgullo y alegría nuestras tradiciones y cultura!</p>
               </article>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">¡Se Acercan Nuestras Fiestas Patrias!</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      La Municipalidad de Río Bravo se complace en anunciar que estamos a punto de celebrar nuestras Fiestas Patrias. Invitamos a toda la comunidad a unirse a las festividades y disfrutar de los eventos y actividades que hemos preparado. ¡Celebremos juntos con orgullo y alegría nuestras tradiciones y cultura!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
